@@ -1,7 +1,7 @@
-# Название задачи
+# name of task
 name: Demo Workflow
 
-# где мы будем запускать (в данном случае сами будем в ручную запускать) 
+# It's how me will run on manually or auto (this time manually) 
 on: workflow_dispatch 
 
 # Steps of jobs 
@@ -15,4 +15,4 @@ jobs:
         # name of steps
       - name: Print to console
         # Now, we run on bash script, which show to us "Github Actions!"
-        - run: echo Hello Github Actions!
+          run: echo Hello Github Actions!
