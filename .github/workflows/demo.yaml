@@ -1,0 +1,18 @@
+# Название задачи
+name: Demo Workflow
+
+# где мы будем запускать (в данном случае сами будем в ручную запускать) 
+on: workflow_dispatch 
+
+# Steps of jobs 
+jobs:
+  # Name of jobs 
+  print: 
+    # Where we are run on Linux/Windows/MacOs
+    runs-on: ubuntu-latest 
+    # steps of configuration
+    steps:
+        # name of steps
+      - name: Print to console
+        # Now, we run on bash script, which show to us "Github Actions!"
+      - run: echo Hello Github Actions!
