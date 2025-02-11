@@ -1,18 +1,10 @@
-# name of task
 name: Demo Workflow
 
-# It's how me will run on manually or auto (this time manually) 
 on: workflow_dispatch 
 
-# Steps of jobs 
 jobs:
-  # Name of jobs 
   print: 
-    # Where we are run on Linux/Windows/MacOs
     runs-on: ubuntu-latest 
-    # steps of configuration
     steps:
-        # name of steps
       - name: Print to console
-        # Now, we run on bash script, which show to us "Github Actions!"
-          run: echo Hello Github Actions!
+        run: echo "Hello Github Actions!"
